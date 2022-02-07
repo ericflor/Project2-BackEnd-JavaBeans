@@ -4,4 +4,4 @@
 ![](./imgs/project2-user-flow.jpg)
 
 **Database Schema**
-![](./imgs/Schema)
+![](./imgs/Schema.png)
