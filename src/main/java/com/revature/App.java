@@ -13,7 +13,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        app = Javalin.create();
+        app = Javalin.create( c -> {
+            c.enableCorsForAllOrigins();
+        });
 
         app.get("hello", (ctx -> {
             String url = ctx.url();
