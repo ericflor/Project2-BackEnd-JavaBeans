@@ -1,0 +1,23 @@
+<configuration>
+    <!-- An appender is a particular stream that the logger will print out to.
+    Here is the console appender ensuring that our logs are printed to the console.  -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- This is a file appender that will print to a file. -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs\\log.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%mdc] [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

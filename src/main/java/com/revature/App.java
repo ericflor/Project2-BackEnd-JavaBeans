@@ -1,10 +1,15 @@
 package com.revature;
 
 import io.javalin.Javalin;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
 
 public class App {
 
     private static Javalin app;
+
+    private static Logger log = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) {
 
@@ -18,6 +23,7 @@ public class App {
         }));
 
         app.start(7000);
+        log.info("Started nextUp");
 
     }
 }
