@@ -3,10 +3,10 @@ package com.revature.models;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User implements Serializable {
+public class User {
 
     public enum  UserRole {
-        Member, Admin
+        MEMBER, ADMIN
     }
 
     // enum.values() is expensive in performance, so we cache the values once across instances
