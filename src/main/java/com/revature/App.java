@@ -1,8 +1,11 @@
 package com.revature;
 
+import com.revature.config.Config;
 import io.javalin.Javalin;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 public class App {
@@ -13,6 +16,7 @@ public class App {
 
     public static void main(String[] args) {
 
+        /// JAVALIN STUFF TO BE DELETED LATER //
         app = Javalin.create( c -> {
             c.enableCorsForAllOrigins();
         });
@@ -26,6 +30,10 @@ public class App {
 
         app.start(7000);
         log.info("Started nextUp");
+        /// JAVALIN STUFF TO BE DELETED LATER //
+
+        /* Application Setup */
+        ApplicationContext ac = new AnnotationConfigApplicationContext(Config.class);
 
     }
 }

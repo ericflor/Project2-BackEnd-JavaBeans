@@ -1,0 +1,15 @@
+11:25:36.971 [] [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+11:25:36.989 [] [main] INFO  org.eclipse.jetty.util.log - Logging initialized @453ms to org.eclipse.jetty.util.log.Slf4jLog
+11:25:36.990 [] [main] INFO  io.javalin.Javalin - Starting Javalin ...
+11:25:37.015 [] [main] INFO  io.javalin.Javalin - You are running Javalin 4.1.1 (released October 10, 2021. Your Javalin version is 122 days old. Consider upgrading!).
+11:25:37.301 [] [main] INFO  io.javalin.Javalin - Listening on http://localhost:7000/
+11:25:37.302 [] [main] INFO  io.javalin.Javalin - Javalin started in 313ms \o/
+11:25:37.302 [] [main] INFO  com.revature.App - Started nextUp
