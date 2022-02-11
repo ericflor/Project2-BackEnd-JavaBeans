@@ -2,14 +2,15 @@ package com.revature.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 public class Favorites {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int favId;
     private String imdbId;
     @ManyToOne(cascade = CascadeType.MERGE)
     @JsonBackReference
@@ -18,9 +19,18 @@ public class Favorites {
     public Favorites() {
     }
 
-    public Favorites(String imdbId, User user) {
+    public Favorites(int favId, String imdbId, User user) {
+        this.favId = favId;
         this.imdbId = imdbId;
         this.user = user;
+    }
+
+    public int getFavId() {
+        return favId;
+    }
+
+    public void setFavId(int favId) {
+        this.favId = favId;
     }
 
     public String getImdbId() {
@@ -44,18 +54,19 @@ public class Favorites {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Favorites favorites = (Favorites) o;
-        return Objects.equals(imdbId, favorites.imdbId) && Objects.equals(user, favorites.user);
+        return getFavId() == favorites.getFavId() && Objects.equals(getImdbId(), favorites.getImdbId()) && Objects.equals(getUser(), favorites.getUser());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(imdbId, user);
+        return Objects.hash(getFavId(), getImdbId(), getUser());
     }
 
     @Override
     public String toString() {
         return "Favorites{" +
-                "imdbId='" + imdbId + '\'' +
+                "favId=" + favId +
+                ", imdbId='" + imdbId + '\'' +
                 ", user=" + user +
                 '}';
     }

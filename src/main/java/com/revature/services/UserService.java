@@ -1,27 +1,41 @@
 package com.revature.services;
 
 import com.revature.models.User;
-import com.revature.repos.UserDAO;
+import com.revature.repos.FavoriteDao;
+import com.revature.repos.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class UserService {
 
-    private UserDAO userDAO;
-
-    public UserService() {}
+    private UserDao userDao;
+    private FavoriteDao favoriteDao;
 
     @Autowired
-    public UserService(UserDAO userDAO) {
-        this.userDAO = userDAO;
+    public UserService(UserDao userDao) {
+        this.userDao = userDao;
     }
 
-    User getUserById(int id) {
-        // Checks if user ID is valid
-        if (id > 0) {
-            return this.userDAO.get(id);
+    public User getUser(int id){
+        Optional<User> user = userDao.findById(id);
+        if(user.isPresent()){
+            return user.get();
         }
-        return null;
+        return new User();
     }
+
+    public boolean addOrUpdateUser(User user){
+        try{
+            userDao.save(user);
+        }catch(Exception e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+
 }

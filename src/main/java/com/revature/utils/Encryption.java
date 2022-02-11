@@ -1,6 +1,5 @@
 package com.revature.utils;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -11,7 +10,7 @@ public class Encryption {
        un-instantiable since we only have static methods. */
     private Encryption(){};
 
-    public static String stringToMD5(@NotNull String s) {
+    public static String stringToMD5(String s) {
         final byte[] defaultBytes = s.getBytes();
         try {
             final MessageDigest md5MsgDigest = MessageDigest.getInstance("MD5");

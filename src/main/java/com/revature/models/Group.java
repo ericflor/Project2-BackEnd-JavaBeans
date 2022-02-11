@@ -1,5 +1,7 @@
 package com.revature.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
@@ -14,7 +16,10 @@ public class Group {
     private String name;
     //@OneToMany // do we need to map/associate users in a group?
     // private User user;
-    private List<String> movies;
+    //private List<String> movies;
+//    @OneToMany(mappedBy = "user.group")
+//    @JsonManagedReference
+//    private List<Decisions> decisions;
 
     public Group() {
     }
@@ -22,6 +27,8 @@ public class Group {
     public Group(int id, String name) {
         this.id = id;
         this.name = name;
+
+
     }
 
     public int getId() {
@@ -45,12 +52,12 @@ public class Group {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Group group = (Group) o;
-        return id == group.id && Objects.equals(name, group.name);
+        return getId() == group.getId() && Objects.equals(getName(), group.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name);
+        return Objects.hash(getId(), getName());
     }
 
     @Override

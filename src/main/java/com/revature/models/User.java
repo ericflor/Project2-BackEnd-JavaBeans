@@ -26,10 +26,12 @@ public class User {
     private String username;
     private String password;
     private String email;
+    private String firstName;
+    private String lastName;
     @ManyToOne(fetch = FetchType.EAGER)
     private Group group;
     private int roleId;
-    @Ignore
+    @Transient
     private UserRole role;
     @OneToMany(mappedBy = "user", cascade = CascadeType.MERGE)
     @JsonManagedReference

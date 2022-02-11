@@ -1,28 +1,40 @@
 package com.revature.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 public class Decisions {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int decisionsId;
     private int roundId;
     @ManyToOne
+    @JsonBackReference
     private User user;
-    @ManyToOne
-    private Group group;
     private String imdbId;
     private boolean choice;
 
     public Decisions() {
     }
 
-    public Decisions(int roundId, User user, Group group, String imdbId, boolean choice) {
+    public Decisions(int decisionsId, int roundId, User user, String imdbId, boolean choice) {
+        this.decisionsId = decisionsId;
         this.roundId = roundId;
         this.user = user;
-        this.group = group;
         this.imdbId = imdbId;
         this.choice = choice;
+    }
+
+    public int getDecisionsId() {
+        return decisionsId;
+    }
+
+    public void setDecisionsId(int decisionsId) {
+        this.decisionsId = decisionsId;
     }
 
     public int getRoundId() {
@@ -41,13 +53,6 @@ public class Decisions {
         this.user = user;
     }
 
-    public Group getGroup() {
-        return group;
-    }
-
-    public void setGroup(Group group) {
-        this.group = group;
-    }
 
     public String getImdbId() {
         return imdbId;
@@ -70,20 +75,20 @@ public class Decisions {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Decisions decisions = (Decisions) o;
-        return roundId == decisions.roundId && choice == decisions.choice && Objects.equals(user, decisions.user) && Objects.equals(group, decisions.group) && Objects.equals(imdbId, decisions.imdbId);
+        return getDecisionsId() == decisions.getDecisionsId() && getRoundId() == decisions.getRoundId() && isChoice() == decisions.isChoice() && Objects.equals(getUser(), decisions.getUser()) && Objects.equals(getImdbId(), decisions.getImdbId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(roundId, user, group, imdbId, choice);
+        return Objects.hash(getDecisionsId(), getRoundId(), getUser(), getImdbId(), isChoice());
     }
 
     @Override
     public String toString() {
         return "Decisions{" +
-                "roundId=" + roundId +
+                "decisionsId=" + decisionsId +
+                ", roundId=" + roundId +
                 ", user=" + user +
-                ", group=" + group +
                 ", imdbId='" + imdbId + '\'' +
                 ", choice=" + choice +
                 '}';
