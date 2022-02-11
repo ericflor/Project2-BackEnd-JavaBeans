@@ -12,6 +12,8 @@ public class Group {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    //@OneToMany // do we need to map/associate users in a group?
+    // private User user;
     private List<String> movies;
 
     public Group() {
