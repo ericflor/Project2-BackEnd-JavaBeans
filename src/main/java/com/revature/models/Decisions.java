@@ -13,8 +13,11 @@ public class Decisions {
     private int decisionsId;
     private int roundId;
     @ManyToOne
-    @JsonBackReference
+    //@JsonBackReference
     private User user;
+
+//    @ManyToOne // maybe use this if we can't figure out query property expressions
+//    private Group group;
     private String imdbId;
     private boolean choice;
 
