@@ -96,6 +96,7 @@ public class User {
 
     public void setRoleId(int roleId) {
         this.roleId = roleId;
+        this.role = UserRoleValues[roleId - 1];
     }
 
     public UserRole getRole() {

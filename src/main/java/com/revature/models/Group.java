@@ -14,7 +14,8 @@ public class Group {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    //@OneToMany // do we need to map/associate users in a group?
+    private boolean open;
+    //@OneToMany // do we need to map/associate users in a group? //nah, use userDAO.findByGroup to get all users in a group
     // private User user;
     //private List<String> movies;
 //    @OneToMany(mappedBy = "user.group")
@@ -24,11 +25,10 @@ public class Group {
     public Group() {
     }
 
-    public Group(int id, String name) {
+    public Group(int id, String name, boolean open) {
         this.id = id;
         this.name = name;
-
-
+        this.open = open;
     }
 
     public int getId() {
@@ -47,17 +47,25 @@ public class Group {
         this.name = name;
     }
 
+    public boolean isOpen() {
+        return open;
+    }
+
+    public void setOpen(boolean open) {
+        this.open = open;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Group)) return false;
         Group group = (Group) o;
-        return getId() == group.getId() && Objects.equals(getName(), group.getName());
+        return getId() == group.getId() && isOpen() == group.isOpen() && Objects.equals(getName(), group.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName());
+        return Objects.hash(getId(), getName(), isOpen());
     }
 
     @Override
@@ -65,6 +73,7 @@ public class Group {
         return "Group{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", open=" + open +
                 '}';
     }
 }
