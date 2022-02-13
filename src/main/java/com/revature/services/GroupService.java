@@ -32,4 +32,8 @@ public class GroupService {
         return true;
     }
 
+    public void deleteGroupById(int id){
+        groupDao.deleteById(id);
+    }
+
 }
