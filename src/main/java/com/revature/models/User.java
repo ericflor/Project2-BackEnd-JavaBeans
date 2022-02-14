@@ -33,7 +33,8 @@ public class User {
     private int roleId;
     @Transient
     private UserRole role;
-    @OneToMany(mappedBy = "user", cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "user",
+            cascade = CascadeType.MERGE)
     @JsonManagedReference
     private List<Favorites> favs;
 
@@ -96,6 +97,7 @@ public class User {
 
     public void setRoleId(int roleId) {
         this.roleId = roleId;
+        this.role = UserRoleValues[roleId - 1];
     }
 
     public UserRole getRole() {
