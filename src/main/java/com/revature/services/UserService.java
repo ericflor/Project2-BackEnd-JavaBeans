@@ -2,7 +2,7 @@ package com.revature.services;
 
 import com.revature.models.User;
 import com.revature.repos.FavoriteDao;
-import com.revature.repos.UserDao;
+import com.revature.repos.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +11,11 @@ import java.util.Optional;
 @Service
 public class UserService {
 
-    private UserDao userDao;
+    private UserDAO userDao;
     private FavoriteDao favoriteDao;
 
     @Autowired
-    public UserService(UserDao userDao) {
+    public UserService(UserDAO userDao) {
         this.userDao = userDao;
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.revature.utils.EncryptionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-02-14T04:16:48" hostname="GIGATRON" time="0.026">
+<testsuite name="com.revature.utils.EncryptionTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-02-15T01:52:32" hostname="DESKTOP-QMFE1MM" time="0.019">
   <properties/>
-  <testcase name="TestPasswordTrue()" classname="com.revature.utils.EncryptionTest" time="0.024"/>
+  <testcase name="TestPasswordTrue()" classname="com.revature.utils.EncryptionTest" time="0.017"/>
   <testcase name="TestPasswordFalse()" classname="com.revature.utils.EncryptionTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
