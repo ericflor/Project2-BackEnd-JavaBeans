@@ -1,10 +1,10 @@
 package com.revature.models;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jdk.nashorn.internal.ir.annotations.Ignore;
+
 
 import javax.persistence.*;
-import java.io.Serializable;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -33,8 +33,8 @@ public class User {
     private int roleId;
     @Transient
     private UserRole role;
-    @OneToMany(mappedBy = "user",
-            cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Favorites> favs;
 
