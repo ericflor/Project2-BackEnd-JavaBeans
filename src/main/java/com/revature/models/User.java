@@ -5,12 +5,13 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "user_tbl")
-public class User {
+public class User implements Serializable {
 
     public enum  UserRole {
         MEMBER, ADMIN
