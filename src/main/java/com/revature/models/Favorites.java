@@ -12,7 +12,7 @@ public class Favorites {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int favId;
     private String imdbId;
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     @JsonBackReference
     private User user;
