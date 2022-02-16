@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 @RestController
 @RequestMapping("/favorites")
 public class FavoritesController {
@@ -25,7 +25,9 @@ public class FavoritesController {
     @PostMapping
     public ResponseEntity<Favorites> addFavByUser(@CookieValue(name = "upNext_user") String cookie,
                                                   @RequestBody Favorites favorites){
+        System.out.println(favorites);
         User user = CookiesUtil.isCookieValid(cookie); // get user id from session cookie
+        System.out.println(user);
 
         if(user != null) { // making sure someone is logged in
 
