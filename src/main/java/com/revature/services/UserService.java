@@ -2,6 +2,7 @@ package com.revature.services;
 
 import com.revature.models.User;
 import com.revature.repos.FavoriteDao;
+
 import com.revature.repos.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
