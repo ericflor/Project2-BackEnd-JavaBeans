@@ -554,9 +554,6 @@ Caused by: org.hibernate.MappingException: Could not determine type for: java.ut
 23:55:58.940 [] [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 23:55:58.940 [] [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 23:55:58.941 [] [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-<<<<<<< HEAD
->>>>>>> 48cb67eef5c55b1da0bac0cf0c6c3202e52a7996
-=======
 11:45:23.779 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 3692 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
 11:45:23.802 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
 11:45:23.852 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -6841,6 +6838,7 @@ java.lang.NullPointerException: null
 17:52:28.224 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
 17:52:28.232 [] [restartedMain] INFO  com.revature.App - Started App in 1.639 seconds (JVM running for 74.785)
 17:52:28.234 [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+<<<<<<< HEAD
 >>>>>>> 92d49923798674975af1091e0c05e2ad5b5f61a7
 21:08:56.737 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on JG-Lenovo with PID 19668 (C:\Users\jessi\Desktop\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by jessi in C:\Users\jessi\Desktop\Revature\Project2-BackEnd-JavaBeans)
 21:08:56.740 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
@@ -6868,3 +6866,387 @@ java.lang.NullPointerException: null
 21:09:05.982 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
 21:09:06.005 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
 21:09:06.021 [] [restartedMain] INFO  com.revature.App - Started App in 9.718 seconds (JVM running for 10.408)
+=======
+14:04:17.978 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 3104 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:04:17.994 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:04:18.275 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:04:18.275 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:04:23.494 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:04:24.275 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 740 ms. Found 4 JPA repository interfaces.
+14:04:27.650 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:04:27.698 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:04:27.698 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:04:27.698 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:04:27.963 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:04:27.963 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9688 ms
+14:04:29.885 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:04:30.260 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:04:31.028 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:04:31.432 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:04:33.619 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:04:33.761 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:04:37.385 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:04:37.416 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:04:39.947 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:04:41.713 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:04:41.728 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:04:41.838 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:04:41.994 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:04:42.057 [] [restartedMain] INFO  com.revature.App - Started App in 25.588 seconds (JVM running for 27.261)
+14:06:47.669 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:06:47.673 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:06:47.694 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+14:18:39.003 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 3884 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:18:39.018 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:18:39.268 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:18:39.268 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:18:43.862 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:18:44.956 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1047 ms. Found 4 JPA repository interfaces.
+14:18:48.141 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:18:48.187 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:18:48.187 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:18:48.187 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:18:48.500 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:18:48.500 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9232 ms
+14:18:50.078 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:18:50.312 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:18:51.187 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:18:51.687 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:18:53.531 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:18:53.625 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:18:56.694 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:18:56.725 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:18:58.318 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:18:59.756 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:18:59.772 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:18:59.818 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:18:59.928 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:18:59.959 [] [restartedMain] INFO  com.revature.App - Started App in 22.279 seconds (JVM running for 23.979)
+14:19:18.497 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:19:18.497 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:19:18.510 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+14:33:16.122 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 4008 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:33:16.153 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:33:16.419 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:33:16.419 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:33:19.669 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:33:20.028 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 322 ms. Found 4 JPA repository interfaces.
+14:33:23.029 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:33:23.060 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:33:23.060 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:33:23.060 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:33:23.278 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:33:23.278 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6859 ms
+14:33:24.575 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:33:24.841 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:33:25.421 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:33:25.763 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:33:27.453 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:33:27.562 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:33:30.654 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:33:30.669 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:33:32.872 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:33:34.294 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:33:34.310 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:33:34.419 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:33:34.513 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:33:34.560 [] [restartedMain] INFO  com.revature.App - Started App in 19.611 seconds (JVM running for 21.366)
+14:33:48.012 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:33:48.016 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:33:48.030 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+14:35:36.366 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 4684 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:35:36.382 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:35:36.601 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:35:36.601 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:35:40.179 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:35:40.757 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 547 ms. Found 4 JPA repository interfaces.
+14:35:43.882 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:35:43.929 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:35:43.929 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:35:43.929 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:35:44.194 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:35:44.194 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7593 ms
+14:35:46.257 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:35:46.561 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:35:47.374 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:35:47.743 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:35:49.462 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:35:49.556 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:35:52.619 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:35:52.634 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:35:54.587 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:35:56.477 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:35:56.493 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:35:56.571 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:35:56.680 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:35:56.743 [] [restartedMain] INFO  com.revature.App - Started App in 21.779 seconds (JVM running for 23.492)
+14:36:06.206 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:36:06.207 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:36:06.222 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+14:39:02.548 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 8108 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:39:02.548 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:39:02.798 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:39:02.798 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:39:06.548 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:39:06.798 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 215 ms. Found 4 JPA repository interfaces.
+14:39:09.861 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:39:09.908 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:39:09.924 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:39:09.924 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:39:10.267 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:39:10.267 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7453 ms
+14:39:11.550 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:39:11.752 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:39:12.314 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:39:12.658 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:39:14.142 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:39:14.237 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:39:17.535 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:39:17.549 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:39:19.627 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:39:21.095 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:39:21.111 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:39:21.189 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:39:21.298 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:39:21.361 [] [restartedMain] INFO  com.revature.App - Started App in 20.089 seconds (JVM running for 21.69)
+14:39:32.240 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:39:32.243 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:39:32.252 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+14:49:33.703 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 780 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:49:33.718 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:49:33.937 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:49:33.937 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:49:36.812 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:49:37.172 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319 ms. Found 4 JPA repository interfaces.
+14:49:39.218 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:49:39.249 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:49:39.249 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:49:39.249 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:49:39.453 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:49:39.453 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5516 ms
+14:49:40.703 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:49:40.937 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:49:41.625 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:49:41.937 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:49:43.281 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:49:43.390 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:49:46.283 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:49:46.312 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:49:47.890 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:49:49.531 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:49:49.546 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:49:49.609 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:49:49.656 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:49:49.687 [] [restartedMain] INFO  com.revature.App - Started App in 16.96 seconds (JVM running for 18.196)
+14:50:05.624 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:50:05.626 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:50:05.631 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+14:53:33.635 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 1880 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:53:33.650 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:53:33.838 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:53:33.838 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:53:37.385 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:53:37.885 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 459 ms. Found 4 JPA repository interfaces.
+14:53:40.213 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:53:40.275 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:53:40.275 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:53:40.275 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:53:40.556 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:53:40.556 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6718 ms
+14:53:42.244 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:53:42.447 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:53:42.980 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:53:43.338 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:53:44.853 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:53:44.931 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:53:49.281 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:53:49.328 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:53:51.422 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:53:52.953 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:53:52.984 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:53:53.063 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:53:53.188 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:53:53.219 [] [restartedMain] INFO  com.revature.App - Started App in 20.78 seconds (JVM running for 22.278)
+14:53:57.569 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:53:57.570 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:53:57.584 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+14:54:32.467 [] [http-nio-7000-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no int/Int-argument constructor/factory method to deserialize from Number value (1)<EOL> at [Source: (PushbackInputStream); line: 2, column: 12] (through reference chain: com.revature.models.Favorites["user"])]
+14:55:12.005 [] [http-nio-7000-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('1')<EOL> at [Source: (PushbackInputStream); line: 2, column: 12] (through reference chain: com.revature.models.Favorites["user"])]
+14:55:33.244 [] [http-nio-7000-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('mario'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.revature.models.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('mario')<EOL> at [Source: (PushbackInputStream); line: 2, column: 12] (through reference chain: com.revature.models.Favorites["user"])]
+14:57:28.504 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 4688 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+14:57:28.520 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:57:28.770 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:57:28.770 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:57:32.051 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:57:32.254 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 4 JPA repository interfaces.
+14:57:34.848 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:57:34.910 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:57:34.910 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:57:34.910 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:57:35.129 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:57:35.129 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6359 ms
+14:57:36.457 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:57:36.707 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:57:37.288 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:57:37.613 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:57:39.191 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:57:39.317 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:57:42.350 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:57:42.380 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:57:44.113 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:57:45.504 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:57:45.535 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:57:45.660 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:57:45.754 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:57:45.801 [] [restartedMain] INFO  com.revature.App - Started App in 18.419 seconds (JVM running for 20.016)
+14:57:55.395 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:57:55.395 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:57:55.399 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+15:00:02.274 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 2972 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+15:00:02.305 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+15:00:02.571 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:00:02.571 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:00:06.227 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:00:06.602 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 348 ms. Found 4 JPA repository interfaces.
+15:00:09.227 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+15:00:09.274 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+15:00:09.274 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:00:09.274 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:00:09.571 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+15:00:09.587 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7016 ms
+15:00:10.884 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:00:11.243 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+15:00:11.884 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:00:12.196 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:00:13.790 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:00:13.915 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:00:16.915 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:00:16.930 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:00:19.180 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:00:20.618 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:00:20.634 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:00:20.696 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+15:00:20.790 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+15:00:20.837 [] [restartedMain] INFO  com.revature.App - Started App in 19.888 seconds (JVM running for 21.861)
+15:00:29.321 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:00:29.321 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:00:29.321 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+15:01:44.347 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 7788 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+15:01:44.363 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+15:01:44.566 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:01:44.566 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:01:48.848 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:01:49.097 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 213 ms. Found 4 JPA repository interfaces.
+15:01:52.175 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+15:01:52.222 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+15:01:52.222 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:01:52.222 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:01:52.519 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+15:01:52.519 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7953 ms
+15:01:54.003 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:01:54.253 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+15:01:55.035 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:01:55.425 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:01:57.097 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:01:57.207 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:02:00.066 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:02:00.081 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:02:02.870 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:02:04.901 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:02:04.917 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:02:04.979 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+15:02:05.104 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+15:02:05.151 [] [restartedMain] INFO  com.revature.App - Started App in 22.789 seconds (JVM running for 24.911)
+15:02:14.091 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:02:14.096 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:02:14.101 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+15:12:30.073 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 1328 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+15:12:30.089 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+15:12:30.277 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:12:30.277 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:12:33.448 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:12:33.683 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 187 ms. Found 4 JPA repository interfaces.
+15:12:36.558 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+15:12:36.605 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+15:12:36.605 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:12:36.605 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:12:36.870 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+15:12:36.870 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6593 ms
+15:12:38.308 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:12:38.542 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+15:12:39.089 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:12:39.388 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:12:40.980 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:12:41.089 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:12:43.918 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:12:43.933 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:12:45.933 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:12:47.464 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:12:47.480 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:12:47.542 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+15:12:47.636 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+15:12:47.683 [] [restartedMain] INFO  com.revature.App - Started App in 18.849 seconds (JVM running for 20.791)
+15:12:59.905 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:12:59.906 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:12:59.915 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+15:44:52.052 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 5296 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+15:44:52.068 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+15:44:52.271 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:44:52.271 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:44:56.132 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:44:56.646 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 412 ms. Found 4 JPA repository interfaces.
+15:44:59.755 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+15:44:59.802 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+15:44:59.802 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:44:59.802 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:45:00.849 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+15:45:00.849 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8563 ms
+15:45:02.255 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:45:02.552 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+15:45:03.245 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:45:03.651 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:45:05.432 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:45:05.526 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:45:09.123 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:45:09.154 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:45:10.873 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:45:12.811 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:45:12.826 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:45:12.889 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+15:45:13.014 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+15:45:13.045 [] [restartedMain] INFO  com.revature.App - Started App in 22.836 seconds (JVM running for 24.343)
+16:28:23.203 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_312 on ERICFLORENC7609 with PID 1268 (C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans\build\classes\java\main started by flodev in C:\Users\flodev\Desktop\ProjectTwo\BackEnd\Project2-BackEnd-JavaBeans)
+16:28:23.219 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:28:23.470 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:28:23.470 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:28:27.276 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:28:27.557 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 227 ms. Found 4 JPA repository interfaces.
+16:28:30.374 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:28:30.421 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:28:30.421 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:28:30.421 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:28:30.666 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:28:30.666 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7196 ms
+16:28:33.057 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:28:33.366 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:28:33.980 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:28:34.365 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:28:36.082 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:28:36.208 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:28:39.657 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:28:39.687 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:28:43.333 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:28:44.868 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:28:44.884 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:28:44.962 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:28:45.072 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:28:45.103 [] [restartedMain] INFO  com.revature.App - Started App in 23.753 seconds (JVM running for 29.152)
+16:34:40.754 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:34:40.816 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:34:41.785 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 954 ms
+16:34:45.358 [] [http-nio-7000-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestCookieException: Required cookie 'upNext_user' for method parameter type String is not present]
+16:36:15.985 [] [http-nio-7000-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestCookieException: Required cookie 'upNext_user' for method parameter type String is not present]
+16:38:06.579 [] [http-nio-7000-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestCookieException: Required cookie 'upNext_user' for method parameter type String is not present]
+16:46:12.403 [] [http-nio-7000-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestCookieException: Required cookie 'upNext_user' for method parameter type String is not present]
+16:47:02.195 [] [http-nio-7000-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestCookieException: Required cookie 'upNext_user' for method parameter type String is not present]
+>>>>>>> 65397c16c6ec59757c38f46b8b9dc9ceaf96a8a5
