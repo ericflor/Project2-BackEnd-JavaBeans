@@ -13,8 +13,9 @@ public class Decisions {
     private int decisionsId;
     private int roundId;
     private String imdbId;
+    private String title;
     private boolean choice;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "user_id", nullable = false)
     @JsonBackReference
     private User user;
@@ -26,12 +27,13 @@ public class Decisions {
     public Decisions() {
     }
 
-    public Decisions(int decisionsId, int roundId, User user, String imdbId, boolean choice) {
+    public Decisions(int decisionsId, int roundId, String imdbId, String title, boolean choice, User user) {
         this.decisionsId = decisionsId;
         this.roundId = roundId;
-        this.user = user;
         this.imdbId = imdbId;
+        this.title = title;
         this.choice = choice;
+        this.user = user;
     }
 
     public int getDecisionsId() {
@@ -50,21 +52,20 @@ public class Decisions {
         this.roundId = roundId;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-
     public String getImdbId() {
         return imdbId;
     }
 
     public void setImdbId(String imdbId) {
         this.imdbId = imdbId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public boolean isChoice() {
@@ -75,17 +76,25 @@ public class Decisions {
         this.choice = choice;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Decisions)) return false;
         Decisions decisions = (Decisions) o;
-        return getDecisionsId() == decisions.getDecisionsId() && getRoundId() == decisions.getRoundId() && isChoice() == decisions.isChoice() && Objects.equals(getUser(), decisions.getUser()) && Objects.equals(getImdbId(), decisions.getImdbId());
+        return getDecisionsId() == decisions.getDecisionsId() && getRoundId() == decisions.getRoundId() && isChoice() == decisions.isChoice() && Objects.equals(getImdbId(), decisions.getImdbId()) && Objects.equals(getTitle(), decisions.getTitle()) && Objects.equals(getUser(), decisions.getUser());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getDecisionsId(), getRoundId(), getUser(), getImdbId(), isChoice());
+        return Objects.hash(getDecisionsId(), getRoundId(), getImdbId(), getTitle(), isChoice(), getUser());
     }
 
     @Override
@@ -93,9 +102,10 @@ public class Decisions {
         return "Decisions{" +
                 "decisionsId=" + decisionsId +
                 ", roundId=" + roundId +
-                ", user=" + user +
                 ", imdbId='" + imdbId + '\'' +
+                ", title='" + title + '\'' +
                 ", choice=" + choice +
+                ", user=" + user +
                 '}';
     }
 }
