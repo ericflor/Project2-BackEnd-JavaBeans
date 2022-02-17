@@ -14,6 +14,7 @@ public class Decisions {
     private int roundId;
     private String imdbId;
     private boolean choice;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id", nullable = false)
     @JsonBackReference
