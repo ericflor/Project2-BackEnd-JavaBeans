@@ -41,15 +41,37 @@ public class User implements Serializable {
 
     public User() {}
 
-    public User(int id, String username, String password, String email, Group group, int roleId, List<Favorites> favs) {
+    public User(int id, String firstName, String lastName, String username, String password, String email, Group group, int roleId, List<Favorites> favs) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.group = group;
         this.roleId = roleId;
         this.favs = favs;
         this.role = UserRoleValues[roleId - 1];
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
     }
 
     public int getId() {
