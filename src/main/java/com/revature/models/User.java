@@ -29,11 +29,11 @@ public class User implements Serializable {
     private String email;
     private String firstName;
     private String lastName;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Group group;
     private int roleId;
-    @Transient
-    private UserRole role;
+    //@Transient
+    //private UserRole role;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
     @JsonManagedReference
@@ -51,7 +51,7 @@ public class User implements Serializable {
         this.group = group;
         this.roleId = roleId;
         this.favs = favs;
-        this.role = UserRoleValues[roleId - 1];
+        //this.role = UserRoleValues[roleId - 1];
     }
 
     public String getFirstName() {
@@ -70,9 +70,9 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 
-    public void setRole(UserRole role) {
-        this.role = role;
-    }
+//    public void setRole(UserRole role) {
+//        this.role = role;
+//    }
 
     public int getId() {
         return id;
@@ -120,12 +120,12 @@ public class User implements Serializable {
 
     public void setRoleId(int roleId) {
         this.roleId = roleId;
-        this.role = UserRoleValues[roleId - 1];
+        //this.role = UserRoleValues[roleId - 1];
     }
 
-    public UserRole getRole() {
-        return role;
-    }
+//    public UserRole getRole() {
+//        return role;
+//    }
 
     public List<Favorites> getFavs() {
         return favs;
@@ -138,14 +138,14 @@ public class User implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof User)) return false;
         User user = (User) o;
-        return id == user.id && roleId == user.roleId && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(email, user.email) && Objects.equals(group, user.group) && role == user.role;
+        return getId() == user.getId() && getRoleId() == user.getRoleId() && Objects.equals(getUsername(), user.getUsername()) && Objects.equals(getPassword(), user.getPassword()) && Objects.equals(getEmail(), user.getEmail()) && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getGroup(), user.getGroup()) && Objects.equals(getFavs(), user.getFavs());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username, password, email, group, roleId, role);
+        return Objects.hash(getId(), getUsername(), getPassword(), getEmail(), getFirstName(), getLastName(), getGroup(), getRoleId(), getFavs());
     }
 
     @Override
@@ -157,7 +157,7 @@ public class User implements Serializable {
                 ", email='" + email + '\'' +
                 ", group=" + group +
                 ", roleId=" + roleId +
-                ", role=" + role +
+                //", role=" + role +
                 '}';
     }
 }
