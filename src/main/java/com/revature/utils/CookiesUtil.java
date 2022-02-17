@@ -38,11 +38,13 @@ public class CookiesUtil {
         if (cookie.isEmpty()) {
             return null;
         }
-
+        System.out.println(cookie);
         byte[] data = Base64.getDecoder().decode(cookie);
+        System.out.println(data);
 
         try {
             ByteArrayInputStream inputStream = new ByteArrayInputStream(data);
+            System.out.println(inputStream);
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             User obj = (User) objectInputStream.readObject();
             objectInputStream.close();

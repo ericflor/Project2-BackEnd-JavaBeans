@@ -4,9 +4,12 @@ import com.revature.models.Group;
 import com.revature.models.User;
 import com.revature.services.GroupService;
 import com.revature.services.UserService;
+import com.revature.utils.CookiesUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.transaction.Transactional;
 
 @CrossOrigin
 @RestController
@@ -23,35 +26,51 @@ public class GroupController {
     }
 
     @GetMapping
-    public ResponseEntity<Group> getGroup(){
-        //get user from session?
-        User user = new User();
-        Group group = groupService.getGroupById(user.getId());
-        if(group!=null){
-            return ResponseEntity.status(200).body(group);
+    public ResponseEntity<Group> getGroup(@CookieValue(name = "upNext_user") String userCookie){
+        User user = CookiesUtil.isCookieValid(userCookie);
+        if(user!=null){
+            Group group = user.getGroup();
+            if(group!=null){
+                return ResponseEntity.status(200).body(group);
+            }
+            return ResponseEntity.status(204).build();
         }
-        return ResponseEntity.status(204).build();
+        return ResponseEntity.status(401).build();
     }
 
     @PostMapping
-    public ResponseEntity<Group> addGroup(@RequestBody Group group){
-        if(groupService.saveGroup(group)){
-            //get user from session?
-            //user.setGroup(group);
-            //user.setRoleId(2);``
-            //if(userService.addOrUpdateUser(user)){}
-            return ResponseEntity.status(201).build();
+    public ResponseEntity<Group> addGroup(//@CookieValue(name = "upNext_user") String userCookie,
+                                          @RequestBody Group group){
+        //User user = CookiesUtil.isCookieValid(userCookie);
+        //if(user!=null) {
+            Group newGroup = groupService.saveGroup(group);
+            if(newGroup!=null){
+                //user.setGroup(newGroup);
+                //user.setRoleId(2);
+                //if(userService.addOrUpdateUser(user)){
+                    return ResponseEntity.status(201).body(newGroup);
+                }
+                //return ResponseEntity.status(400).build();
 
-        }
-        return ResponseEntity.status(400).build();
+            return ResponseEntity.status(400).build();
+        //}
+        //return ResponseEntity.status(401).build();
     }
 
     @PutMapping
-    public ResponseEntity<Group> updateGroup(@RequestBody Group group){
-        if(groupService.saveGroup(group)){
-            return ResponseEntity.status(202).build();
+    public ResponseEntity<Group> updateGroup(@CookieValue(name = "upNext_user") String userCookie,
+                                             @RequestBody Group group){
+        //get user info
+        User user = CookiesUtil.isCookieValid(userCookie);
+        //check if user is admin of given group, otherwise return Unauthorized
+        if(user != null && user.getRoleId() == 2 && user.getGroup().getId() == group.getId()){
+            Group newGroup = groupService.saveGroup(group);
+            if(newGroup!=null){
+                return ResponseEntity.status(202).body(newGroup);
+            }
+            return ResponseEntity.status(400).build();
         }
-        return ResponseEntity.status(400).build();
+        return ResponseEntity.status(401).build();
     }
 
     @PutMapping("/join/{id}")

@@ -11,7 +11,7 @@ import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 @RestController
 public class LoginController {
 
@@ -31,8 +31,12 @@ public class LoginController {
         if (u != null){
 
             ResponseCookie cookie = CookiesUtil.buildResponseCookie(u);
+            System.out.println(u.toString());
+            System.out.println(cookie.toString());
+            //HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS
 
-            return ResponseEntity.status(200).header(HttpHeaders.SET_COOKIE, cookie.toString()).build();
+
+            return ResponseEntity.status(200).header(HttpHeaders.SET_COOKIE, cookie.toString()). body(u);
         }
         return ResponseEntity.status(400).build();
     }
