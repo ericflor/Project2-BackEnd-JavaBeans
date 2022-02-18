@@ -5,6 +5,8 @@ import com.revature.repos.DecisionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DecisionService {
 
@@ -30,14 +32,22 @@ public class DecisionService {
         return true;
     }
 
-    public void getWinner(Decisions decisions){
-        for(decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId()) {
+    public List getWinner(List<Decisions> decisions) {
+        for (int i = 0; i <= 10; i++) {
+            decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound
+                    (decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());
+            {
+            return
 //        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
-//    }
+            }
+        }
+    }
 
 //        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
 
-
+public List<Decisions>getAllDecisions(){
+                    return getWinner(decisionDao.findAll());
+            };
     //after voting we will delete the movies from DB
     public void deleteMovies(int id){
         decisionDao.deleteById(id);

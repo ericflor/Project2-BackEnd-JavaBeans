@@ -13,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true"
 )
         @RestController
@@ -48,19 +50,7 @@ public class DecisionsController {
         return ResponseEntity.status(401).build();
     }
 
-//    Add decisions to database
-//    @PostMapping
-//    public  ResponseEntity<Decisions> newDecisions(@RequestBody Decisions decisions) {
-//      if (decisionService.addMovies(decisions)) {
-//
-//                return ResponseEntity.status(201).build();
-//
-//            }
-//            return ResponseEntity.status(400).build();
-//        }
-//
-////        return ResponseEntity.status(401).build();
-////    }
+
 
     @PutMapping //If new round is started, update the ten movies
     public ResponseEntity<Decisions> newRound(@RequestBody Decisions decisions){
@@ -68,6 +58,11 @@ public class DecisionsController {
             return ResponseEntity.status(202).build();
         }
         return ResponseEntity.status(400).build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Decisions>> getAllDecisions(){
+        return ResponseEntity.status(200).body(decisionService.getAllDecisions());
     }
 
     @GetMapping
