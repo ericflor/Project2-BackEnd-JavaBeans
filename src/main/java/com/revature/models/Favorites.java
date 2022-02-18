@@ -3,10 +3,11 @@ package com.revature.models;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class Favorites {
+public class Favorites implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
