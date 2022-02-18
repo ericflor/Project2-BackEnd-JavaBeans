@@ -26,7 +26,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<User> registerUser(@RequestBody User user){
         System.out.println(user);
-
+        user.setGroup(null);
         user.setPassword(Encryption.stringToMD5(user.getPassword()));
 
         if(userService.addOrUpdateUser(user)){

@@ -10269,425 +10269,119 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-02:55:38.817 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_301 on DESKTOP-M7NE0M2 with PID 18632 (C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by elias in C:\Users\elias\Revature\Project2-BackEnd-JavaBeans)
-02:55:38.821 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
-02:55:38.885 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-02:55:38.885 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-02:55:39.797 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-02:55:39.863 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
-02:55:40.676 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
-02:55:40.690 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
-02:55:40.690 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-02:55:40.690 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-02:55:40.779 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
-02:55:40.780 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1895 ms
-02:55:41.144 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-02:55:41.226 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-02:55:41.462 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-02:55:41.596 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-02:55:43.423 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-02:55:43.474 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-02:55:45.812 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-02:55:45.829 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-02:55:46.218 [] [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionsController' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\controllers\DecisionsController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-02:55:46.218 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-02:55:46.221 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-02:55:47.006 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-02:55:47.008 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-02:55:47.020 [] [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-02:55:47.056 [] [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionsController' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\controllers\DecisionsController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.revature.App.main(App.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 24 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 38 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Iterator.forEachRemaining(Iterator.java:116)
-	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1051)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
-	at java.util.Optional.map(Optional.java:215)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
-	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
-	at org.springframework.data.util.Lazy.get(Lazy.java:114)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
-	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 49 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:113)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:254)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
-	... 71 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
-	at java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:324)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
-	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:95)
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
-	... 75 common frames omitted
-02:56:29.773 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_301 on DESKTOP-M7NE0M2 with PID 22904 (C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by elias in C:\Users\elias\Revature\Project2-BackEnd-JavaBeans)
-02:56:29.777 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
-02:56:29.840 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-02:56:29.840 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-02:56:30.572 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-02:56:30.633 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
-02:56:31.351 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
-02:56:31.360 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
-02:56:31.360 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-02:56:31.360 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-02:56:31.445 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
-02:56:31.445 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1603 ms
-02:56:31.728 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-02:56:31.779 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-02:56:31.933 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-02:56:32.024 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-02:56:33.531 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-02:56:33.570 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-02:56:35.762 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-02:56:35.775 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-02:56:36.119 [] [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionsController' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\controllers\DecisionsController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-02:56:36.119 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-02:56:36.121 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-02:56:36.234 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-02:56:36.236 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-02:56:36.251 [] [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-02:56:36.270 [] [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionsController' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\controllers\DecisionsController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.revature.App.main(App.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'decisionService' defined in file [C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main\com\revature\services\DecisionService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 24 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'decisionDao' defined in com.revature.repos.DecisionDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 38 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! Reason: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Iterator.forEachRemaining(Iterator.java:116)
-	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1051)
-	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
-	at java.util.Optional.map(Optional.java:215)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
-	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
-	at org.springframework.data.util.Lazy.get(Lazy.java:114)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
-	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 49 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract int com.revature.repos.DecisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(java.lang.String,boolean,int,int)! No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:113)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:254)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
-	... 71 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property round found for type Decisions! Did you mean 'roundId'?
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
-	at java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:324)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
-	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:95)
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
-	... 75 common frames omitted
-02:57:09.721 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_301 on DESKTOP-M7NE0M2 with PID 13248 (C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by elias in C:\Users\elias\Revature\Project2-BackEnd-JavaBeans)
-02:57:09.725 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
-02:57:09.791 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-02:57:09.791 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-02:57:10.509 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-02:57:10.588 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
-02:57:11.281 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
-02:57:11.291 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
-02:57:11.291 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-02:57:11.291 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-02:57:11.387 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
-02:57:11.387 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1596 ms
-02:57:11.662 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-02:57:11.711 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-02:57:11.868 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-02:57:11.960 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-02:57:16.079 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-02:57:16.117 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-02:57:18.400 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-02:57:18.414 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-02:57:18.923 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-02:57:19.340 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-02:57:19.346 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-02:57:19.368 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
-02:57:19.385 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
-02:57:19.394 [] [restartedMain] INFO  com.revature.App - Started App in 9.985 seconds (JVM running for 10.48)
-02:57:58.530 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-02:57:58.530 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-02:57:58.531 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-05:39:23.814 [] [http-nio-7000-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-06:20:36.626 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_301 on DESKTOP-M7NE0M2 with PID 10728 (C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by elias in C:\Users\elias\Revature\Project2-BackEnd-JavaBeans)
-06:20:36.630 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
-06:20:36.718 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-06:20:36.718 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-06:20:37.622 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-06:20:37.700 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
-06:20:38.630 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
-06:20:38.640 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
-06:20:38.641 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-06:20:38.641 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-06:20:38.760 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
-06:20:38.761 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2043 ms
-06:20:39.128 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-06:20:39.234 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
-06:20:39.408 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-06:20:39.533 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-06:20:41.153 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-06:20:41.199 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-06:20:43.532 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-06:20:43.545 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-06:20:44.025 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-06:20:44.504 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-06:20:44.511 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-06:20:44.530 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
-06:20:44.544 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
-06:20:44.554 [] [restartedMain] INFO  com.revature.App - Started App in 8.319 seconds (JVM running for 8.932)
-06:21:18.161 [] [http-nio-7000-exec-2] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-06:21:18.161 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-06:21:18.163 [] [http-nio-7000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-06:55:24.305 [] [http-nio-7000-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/data] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.revature.controllers.GroupController.joinGroup(GroupController.java:107)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-06:56:08.665 [] [http-nio-7000-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/data] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+10:13:34.388 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 43368 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+10:13:34.391 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+10:13:34.449 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:13:34.450 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:13:35.888 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:13:35.968 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+10:13:36.942 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+10:13:36.952 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+10:13:36.953 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:13:36.953 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+10:13:37.202 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+10:13:37.202 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2752 ms
+10:13:37.789 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:13:37.881 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+10:13:38.120 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:13:38.266 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:13:39.364 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:13:39.456 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+10:13:40.736 [] [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+10:13:40.736 [] [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "uk_xkjl2orevvtyrqqshcot355j" of relation "user_tbl" does not exist, skipping
+10:13:40.849 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:13:40.858 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:13:41.581 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:13:42.051 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:13:42.057 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+10:13:42.095 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+10:13:42.113 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+10:13:42.127 [] [restartedMain] INFO  com.revature.App - Started App in 8.199 seconds (JVM running for 9.509)
+12:26:23.050 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:26:23.052 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:26:23.063 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+12:26:23.502 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5510625c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.530 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3e267e1c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.559 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@490b5572 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.586 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1f5fcc8d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.614 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@33f79a74 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.642 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3eacc488 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.666 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2d9fa6ea (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.694 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4cc52c70 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.724 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@43ee2ba6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:26:23.752 [] [http-nio-7000-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1b3e3fd7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:27:02.636 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 11052 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+12:27:02.639 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+12:27:02.687 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:27:02.687 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:27:03.540 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:27:03.624 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+12:27:04.430 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+12:27:04.442 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+12:27:04.443 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:27:04.443 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+12:27:04.544 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+12:27:04.544 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1856 ms
+12:27:04.914 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:27:04.980 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+12:27:05.172 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12:27:05.278 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:27:06.051 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:27:06.087 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+12:27:07.354 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:27:07.374 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:27:08.017 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:27:08.483 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:27:08.488 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+12:27:08.509 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+12:27:08.528 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+12:27:08.540 [] [restartedMain] INFO  com.revature.App - Started App in 6.237 seconds (JVM running for 6.841)
+12:27:26.567 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:27:26.568 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:27:26.569 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+12:28:19.421 [] [http-nio-7000-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+12:28:19.421 [] [http-nio-7000-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "group_tbl_pkey"
+  Detail: Key (id)=(2) already exists.
+12:46:05.277 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 26524 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+12:46:05.281 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+12:46:05.331 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:46:05.331 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:46:06.286 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:46:06.377 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 4 JPA repository interfaces.
+12:46:07.201 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+12:46:07.214 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+12:46:07.214 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:46:07.215 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+12:46:07.314 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+12:46:07.314 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1982 ms
+12:46:07.686 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:46:07.752 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+12:46:07.966 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12:46:08.094 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:46:08.848 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:46:08.884 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+12:46:10.115 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:46:10.124 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:46:10.782 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:46:11.263 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:46:11.270 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+12:46:11.293 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+12:46:11.313 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+12:46:11.328 [] [restartedMain] INFO  com.revature.App - Started App in 6.402 seconds (JVM running for 7.097)
+12:46:15.615 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:46:15.615 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:46:15.616 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+12:57:25.512 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4870803b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.536 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@15789b6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.569 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2791e78d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.601 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2bf3de06 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.627 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@746be0d6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.655 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@49ccddd4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.683 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6149f6ef (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.711 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@547f172e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.737 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7fb92027 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+12:57:25.767 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@50b46079 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:01:49.405 [] [http-nio-7000-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/data] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.revature.controllers.GroupController.addGroup(GroupController.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -10744,3 +10438,32 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+13:02:30.455 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 19964 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+13:02:30.457 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+13:02:30.505 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:02:30.505 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:02:31.412 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:02:31.501 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 4 JPA repository interfaces.
+13:02:32.535 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+13:02:32.546 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+13:02:32.546 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:02:32.546 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+13:02:32.693 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+13:02:32.694 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2188 ms
+13:02:33.178 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:02:33.261 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+13:02:33.467 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:02:33.589 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:02:34.352 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:02:34.392 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:02:35.700 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:02:35.710 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:02:36.360 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:02:36.832 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:02:36.838 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+13:02:36.857 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+13:02:36.877 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+13:02:36.891 [] [restartedMain] INFO  com.revature.App - Started App in 6.792 seconds (JVM running for 7.414)
+13:03:01.538 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:03:01.539 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:03:01.540 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
