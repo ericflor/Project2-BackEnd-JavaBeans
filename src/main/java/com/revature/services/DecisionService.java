@@ -32,22 +32,22 @@ public class DecisionService {
         return true;
     }
 
-    public List getWinner(List<Decisions> decisions) {
-        for (int i = 0; i <= 10; i++) {
-            decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound
-                    (decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());
-            {
-            return
-//        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
-            }
-        }
-    }
+//    public List getWinner(List<Decisions> decisions) {
+//        for (int i = 0; i <= 10; i++) {
+//            decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound
+//                    (decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());
+//            {
+//            return
+////        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
+//            }
+//        }
+//    }
 
 //        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
 
-public List<Decisions>getAllDecisions(){
-                    return getWinner(decisionDao.findAll());
-            };
+//public List<Decisions>getAllDecisions(){
+//                    return getWinner(decisionDao.findAll());
+//            };
     //after voting we will delete the movies from DB
     public void deleteMovies(int id){
         decisionDao.deleteById(id);

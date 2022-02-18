@@ -60,15 +60,15 @@ public class DecisionsController {
         return ResponseEntity.status(400).build();
     }
 
-    @GetMapping
-    public ResponseEntity<List<Decisions>> getAllDecisions(){
-        return ResponseEntity.status(200).body(decisionService.getAllDecisions());
-    }
-
-    @GetMapping
-    public ResponseEntity<Decisions>getWinner(){
-        return ResponseEntity.status(200).body(decisionService.getWinner());
-    }
+//    @GetMapping
+//    public ResponseEntity<List<Decisions>> getAllDecisions(){
+//        return ResponseEntity.status(200).body(decisionService.getAllDecisions());
+//    }
+//
+//    @GetMapping
+//    public ResponseEntity<Decisions>getWinner(){
+//        return ResponseEntity.status(200).body(decisionService.getWinner());
+//    }
 
 
 }

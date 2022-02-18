@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.Query;
 public interface DecisionDao extends JpaRepository<Decisions, Integer> {
 //    int countByTitleAndChoiceAndUserGroupIdAndRound(String title, boolean choice, int groupId, int round)
 //            ;
-    @Query
+//    @Query
 }
