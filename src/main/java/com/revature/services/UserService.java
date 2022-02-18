@@ -43,5 +43,20 @@ public class UserService {
         return userDao.findAll();
     }
 
+    public List<User> getUsersByGroupId(int groupId){
+        return userDao.findByGroupId(groupId);
+    }
+    public void removeGroupFromUsers(int groupId){
+        try {
+            List<User> groupMembers = userDao.findByGroupId(groupId);
+            for (User member : groupMembers) {
+                member.setGroup(null);
+                userDao.save(member);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
 
 }
