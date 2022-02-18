@@ -9,15 +9,13 @@ import com.revature.services.DecisionService;
 import com.revature.services.UserService;
 import com.revature.utils.CookiesUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true"
-)
-        @RestController
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
+@RestController
 @RequestMapping("/decisions")
 public class DecisionsController {
 
@@ -31,26 +29,23 @@ public class DecisionsController {
     }
 
     @PostMapping //add the movies to DB
-    public ResponseEntity<Decisions> addMoviesByUser(@CookieValue(name = "upNext_user") String cookie,
-                                                  @RequestBody Decisions decisions){
+    public ResponseEntity<Decisions> addMovies(@CookieValue(name = "upNext_user") String cookie,
+                                               @RequestBody Decisions decisions){
+        System.out.println(decisions);
         User user = CookiesUtil.isCookieValid(cookie); // get user id from session cookie
+        System.out.println(user);
 
         if(user != null) { // making sure someone is logged in
 
             decisions.setUser(user); // save imdb movie name by user id
 
             if (decisionService.addMovies(decisions)) {
-
                 return ResponseEntity.status(201).build();
-
             }
             return ResponseEntity.status(400).build();
         }
-
         return ResponseEntity.status(401).build();
     }
-
-
 
     @PutMapping //If new round is started, update the ten movies
     public ResponseEntity<Decisions> newRound(@RequestBody Decisions decisions){
@@ -60,15 +55,17 @@ public class DecisionsController {
         return ResponseEntity.status(400).build();
     }
 
-//    @GetMapping
-//    public ResponseEntity<List<Decisions>> getAllDecisions(){
-//        return ResponseEntity.status(200).body(decisionService.getAllDecisions());
-//    }
-//
-//    @GetMapping
-//    public ResponseEntity<Decisions>getWinner(){
-//        return ResponseEntity.status(200).body(decisionService.getWinner());
-//    }
+    @GetMapping("/round/{roundId}")
+    public ResponseEntity<List<Decisions>> getMoviesForUsers(@CookieValue(name = "upNext_user") String cookie,
+                                                             @PathVariable int roundId){
+        User user = CookiesUtil.isCookieValid(cookie);
 
+        if(user != null) { // making sure someone is logged in
+
+           List<Decisions> allmovies = decisionService.getMoviesForUsers(roundId, user.getGroup().getId()); // save imdb movie name by user id
+            return ResponseEntity.status(200).body(allmovies);
+        }
+        return ResponseEntity.status(401).build();
+    }
 
 }
