@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 @RestController
 @RequestMapping("/decisions")
 public class DecisionsController {
@@ -27,7 +27,12 @@ public class DecisionsController {
     }
 
     @PostMapping //add the movies to DB
-    public ResponseEntity<Decisions> addMovies(@RequestBody Decisions decisions){
+    public ResponseEntity<Decisions> addMovies(@CookieValue(name = "upNext_user") String cookie,
+                                               @RequestBody Decisions decisions){
+        System.out.println(decisions);
+        User user = CookiesUtil.isCookieValid(cookie); // get user id from session cookie
+        System.out.println(user);
+
         if(decisionService.addMovies(decisions)){
             return ResponseEntity.status(201).build();
 
