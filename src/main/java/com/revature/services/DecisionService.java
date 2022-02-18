@@ -31,15 +31,6 @@ public class DecisionService {
 
 //    Posting which movies were liked out of the ten that were served
 
-    public boolean savLike(Decisions decisions){
-        try {
-            decisionDao.save(decisions);
-        }catch(Exception e){
-            e.printStackTrace();
-            return false;
-        }
-        return true;
-    }
 
     //after voting we will delete the movies from DB
     public void deleteMovies(int id){
