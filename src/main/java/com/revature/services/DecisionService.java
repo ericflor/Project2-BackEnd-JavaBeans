@@ -29,7 +29,9 @@ public class DecisionService {
         return true;
     }
 
-//    Posting which movies were liked out of the ten that were served
+    public List<Decisions> getMoviesForUsers(int roundId, int groupId){
+        return decisionDao.findByRoundIdAndUserGroupId(roundId, groupId);
+    }
 
 
     //after voting we will delete the movies from DB
