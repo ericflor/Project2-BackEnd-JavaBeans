@@ -36,7 +36,7 @@ public class DecisionsController {
         if(decisionService.addMovies(decisions)){
             return ResponseEntity.status(201).build();
 
-    }
+        }
         return ResponseEntity.status(400).build();
     }
 
