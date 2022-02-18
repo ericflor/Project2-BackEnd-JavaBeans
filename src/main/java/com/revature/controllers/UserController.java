@@ -1,6 +1,7 @@
 package com.revature.controllers;
 
 import com.revature.models.User;
+import com.revature.services.GroupService;
 import com.revature.services.UserService;
 import com.revature.utils.CookiesUtil;
 import com.revature.utils.Encryption;
@@ -51,5 +52,15 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<User>> getAllUsers(){
         return ResponseEntity.status(200).body(userService.getAllUser());
+    }
+
+    @GetMapping("/current")
+    public ResponseEntity<User> getCurrentUser(@CookieValue(name = "upNext_user") String cookie){
+        User user = CookiesUtil.isCookieValid(cookie);
+        if(user!=null){
+            user = userService.getUser(user.getId());
+            return ResponseEntity.status(200).body(user);
+        }
+        return ResponseEntity.status(401).build();
     }
 }
