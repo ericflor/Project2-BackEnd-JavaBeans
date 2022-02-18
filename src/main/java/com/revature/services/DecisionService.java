@@ -1,17 +1,18 @@
 package com.revature.services;
 
 import com.revature.models.Decisions;
-import com.revature.models.Group;
 import com.revature.repos.DecisionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class DecisionService {
 
     private DecisionDao decisionDao;
+
+//    public DecisionService(){
+//
+//    }
 
     @Autowired
     public DecisionService(DecisionDao decisionDao) {
@@ -29,7 +30,12 @@ public class DecisionService {
         return true;
     }
 
-//    Posting which movies were liked out of the ten that were served
+    public void getWinner(Decisions decisions){
+        for(decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId()) {
+//        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
+//    }
+
+//        return decisionDao.countByTitleAndChoiceAndUserGroupIdAndRound(decisions.getTitle(), decisions.isChoice(), decisions.getUser().getGroup().getId(), decisions.getRoundId());    }
 
 
     //after voting we will delete the movies from DB
