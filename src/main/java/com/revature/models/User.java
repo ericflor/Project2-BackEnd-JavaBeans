@@ -34,7 +34,7 @@ public class User implements Serializable {
     private int roleId;
     //@Transient
     //private UserRole role;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER,
             cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Favorites> favs;

@@ -1,9 +1,12 @@
 package com.revature.services;
 
 import com.revature.models.Group;
+import com.revature.models.User;
 import com.revature.repos.GroupDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service

@@ -29,13 +29,8 @@ public class LoginController {
         // Checks if account information is valid
         User u = loginService.validateAccount(user.username, user.password);
         if (u != null){
-
             ResponseCookie cookie = CookiesUtil.buildResponseCookie(u);
             System.out.println(u.toString());
-            System.out.println(cookie.toString());
-            //HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS
-
-
             return ResponseEntity.status(200).header(HttpHeaders.SET_COOKIE, cookie.toString()). body(u);
         }
         return ResponseEntity.status(400).build();
