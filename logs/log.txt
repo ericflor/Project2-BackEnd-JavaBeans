@@ -1,0 +1,65 @@
+03:45:01.844 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_301 on DESKTOP-M7NE0M2 with PID 2244 (C:\Users\elias\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by elias in C:\Users\elias\Revature\Project2-BackEnd-JavaBeans)
+03:45:01.848 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+03:45:01.912 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+03:45:01.912 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+03:45:02.628 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:45:02.687 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+03:45:03.393 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+03:45:03.402 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+03:45:03.402 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03:45:03.403 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+03:45:03.486 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+03:45:03.486 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1568 ms
+03:45:03.763 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:45:03.813 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+03:45:03.960 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:45:04.048 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+03:45:05.537 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+03:45:05.571 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+03:45:07.736 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:45:07.747 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:45:08.205 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:45:08.569 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+03:45:08.575 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+03:45:08.596 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+03:45:08.612 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+03:45:08.622 [] [restartedMain] INFO  com.revature.App - Started App in 7.086 seconds (JVM running for 7.554)
+03:45:39.889 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:45:39.889 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03:45:39.890 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+04:23:55.291 [] [http-nio-7000-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.291 [] [http-nio-7000-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.291 [] [http-nio-7000-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.291 [] [http-nio-7000-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.294 [] [http-nio-7000-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.294 [] [http-nio-7000-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.294 [] [http-nio-7000-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.294 [] [http-nio-7000-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.296 [] [http-nio-7000-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.296 [] [http-nio-7000-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.296 [] [http-nio-7000-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.296 [] [http-nio-7000-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.469 [] [http-nio-7000-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.469 [] [http-nio-7000-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.474 [] [http-nio-7000-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.475 [] [http-nio-7000-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.480 [] [http-nio-7000-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.481 [] [http-nio-7000-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:23:55.494 [] [http-nio-7000-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:23:55.495 [] [http-nio-7000-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:24:04.271 [] [http-nio-7000-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:24:04.271 [] [http-nio-7000-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
+04:24:06.076 [] [http-nio-7000-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+04:24:06.076 [] [http-nio-7000-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "decisions" does not exist
+  Position: 13
