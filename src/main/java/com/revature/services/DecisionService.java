@@ -34,6 +34,7 @@ public class DecisionService {
     }
 
 
+
     //after voting we will delete the movies from DB
     public void deleteMovies(int id){
         decisionDao.deleteById(id);
