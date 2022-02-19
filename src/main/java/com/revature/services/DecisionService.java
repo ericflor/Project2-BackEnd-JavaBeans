@@ -1,8 +1,8 @@
 package com.revature.services;
 
 import com.revature.models.Decisions;
-import com.revature.models.Group;
 import com.revature.repos.DecisionDao;
+import com.revature.repos.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +12,7 @@ import java.util.List;
 public class DecisionService {
 
     private DecisionDao decisionDao;
+    private UserDAO userDAO;
 
     @Autowired
     public DecisionService(DecisionDao decisionDao) {
@@ -33,11 +34,22 @@ public class DecisionService {
         return decisionDao.findByRoundIdAndUserGroupId(roundId, groupId);
     }
 
+    public String getRoundWinner(int roundId, int groupId){
+        int numUsers = userDAO.findByGroupId(groupId).size(); //# of users in this group
+        int numDecisions = decisionDao.countByUserGroupId(groupId); //# of decisions group made
+
+        if(numUsers*10 == numDecisions){
+            return  decisionDao.getWinner(roundId, groupId);
+        }
+        return "No winner yet!";
+    }
+
 
 
     //after voting we will delete the movies from DB
     public void deleteMovies(int id){
         decisionDao.deleteById(id);
     }
+
 
 }
