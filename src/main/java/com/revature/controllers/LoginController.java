@@ -7,6 +7,7 @@ import com.revature.utils.CookiesUtil;
 import com.revature.utils.Encryption;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -39,9 +40,9 @@ public class LoginController {
     @PostMapping("/logout")
     public ResponseEntity logoutRequest() {
         // Grabs an Empty Cookie that expires immediately
-        ResponseCookie cookie = CookiesUtil.nullResponseCookie();
+        ResponseCookie empty_cookie = CookiesUtil.nullResponseCookie();
         // Returns 200 with Empty Cookie
-        return ResponseEntity.status(200).header(HttpHeaders.SET_COOKIE, cookie.toString()).build();
+        return ResponseEntity.status(HttpStatus.OK).header(HttpHeaders.SET_COOKIE, empty_cookie.toString()).build();
     }
 
     // Added this method just to test the login also to show how it should work
