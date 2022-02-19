@@ -15,7 +15,8 @@ public class DecisionService {
     private UserDAO userDAO;
 
     @Autowired
-    public DecisionService(DecisionDao decisionDao) {
+    public DecisionService(DecisionDao decisionDao, UserDAO userDAO) {
+        this.userDAO = userDAO;
         this.decisionDao = decisionDao;
     }
 

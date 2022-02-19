@@ -58,6 +58,6 @@ public class CookiesUtil {
 
     public static ResponseCookie nullResponseCookie(){
         // Returns Empty Cookie
-        return ResponseCookie.from("upNext_user","").maxAge(7 * 24 * 60 * 60).build();
+        return ResponseCookie.from("upNext_user",null).maxAge(0).build();
     }
 }
