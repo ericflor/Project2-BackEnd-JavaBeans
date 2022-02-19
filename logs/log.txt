@@ -10519,3 +10519,52 @@ java.lang.NullPointerException: null
 00:51:47.816 [] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h41m28s137ms523µs200ns).
 00:52:29.608 [] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s451ms430µs600ns).
 12:18:40.254 [] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h24m58s600ms68µs700ns).
+13:26:51.040 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 26988 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+13:26:51.042 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+13:26:51.103 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:26:51.103 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:26:52.122 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:26:52.220 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+13:26:53.118 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+13:26:53.132 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+13:26:53.133 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:26:53.133 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+13:26:53.236 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+13:26:53.236 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2132 ms
+13:26:53.655 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13:26:53.722 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+13:26:53.918 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:26:54.043 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:26:54.840 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:26:54.876 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:26:56.353 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:26:56.384 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:26:57.281 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:26:57.967 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:26:57.973 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+13:26:58.003 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+13:26:58.033 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+13:26:58.047 [] [restartedMain] INFO  com.revature.App - Started App in 7.371 seconds (JVM running for 7.982)
+13:36:55.394 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:36:55.394 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:36:55.396 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:36:55.583 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4df2ec6a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.609 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2599c674 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.635 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1560b204 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.662 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@29927362 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.683 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3839db5d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.710 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@53f81048 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.735 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@431878a1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.771 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@79ab1ac3 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.799 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@fbed598 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:36:55.826 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1c57fe77 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.496 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1c0a402c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.525 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@438b740f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.556 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1316ff52 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.589 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@78035854 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.615 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6f613920 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.642 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3f44ddb6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.670 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@316ceee4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.701 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@749838a1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.732 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5b988b44 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+13:58:02.760 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@198bd0a4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.

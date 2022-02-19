@@ -32,7 +32,7 @@ public class DecisionService {
     }
 
     public List<Decisions> getMoviesForUsers(int roundId, int groupId){
-        return decisionDao.findByRoundIdAndUserGroupId(roundId, groupId);
+        return decisionDao.findDistinctByRoundIdAndUserGroupId(roundId, groupId);
     }
 
     public String getRoundWinner(int roundId, int groupId){
