@@ -16,21 +16,20 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 
 ---
 
-## Users can :
+## Users can:
 
-- Register.
+- Register
 
-- Login/Logout.
+- Login/Logout
 
-- Update their information.
+- Update their information
 
-- Users will be served a selection of movies/shows through the imdb api
+- Users will be served a selection of movies/shows through the ImDb API
 
-- Requirement 1: Users can search for and favorite movies from imdb api
+- Requirement 1: Users can search for and favorite movies
 
 - Requirement 2: Join a group with other users of their choice
 
-- Requirement 3: vote on movies/shows
+- Requirement 3: vote on movies inside of groups
 
 - Requirement 4: perform logic to decide most voted on movie and display the winner
-
