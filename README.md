@@ -34,4 +34,3 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 
 - Requirement 4: perform logic to decide most voted on movie and display the winner
 
-- Stretch Goal: use Utelly api to serve list of streaming services offering agreed upon movie
