@@ -25,7 +25,7 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 
 - Update their information
 
-- Users will be served a selection of movies/shows through the ImDb API
+- Users will be served a selection of movies/shows through the IMDb API
 
 - Requirement 1: Users can search for and favorite movies
 
@@ -48,4 +48,4 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 - HTML5
 - CSS
 - Bootstrap 5.1
-- ImDb API
+- IMDb API
