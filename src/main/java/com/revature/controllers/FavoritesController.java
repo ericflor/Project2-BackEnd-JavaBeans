@@ -51,6 +51,26 @@ public class FavoritesController {
         return ResponseEntity.status(401).build();
     }
 
+    @PostMapping("/delete")
+    public ResponseEntity<User> deleteFavsByUser(@CookieValue(name = "upNext_user") String cookie){
+        User user = CookiesUtil.isCookieValid(cookie); // get user id from session cookie
+        user = userService.getUser(user.getId());
+        if(user != null) { // making sure someone is logged in
+
+            if (favoriteService.deleteFavs()) {
+
+                ResponseCookie response_cookie = CookiesUtil.buildResponseCookie(user);
+                return ResponseEntity.status(201).header(HttpHeaders.SET_COOKIE, response_cookie.toString()).body(user);
+
+            }
+            return ResponseEntity.status(400).build();
+        }
+
+        return ResponseEntity.status(401).build();
+    }
+
+
+
     // testing - to be deleted later
     @GetMapping
     public ResponseEntity<List<Favorites>> getAllFavs(){

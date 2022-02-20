@@ -30,6 +30,16 @@ public class FavoriteService {
         return true;
     }
 
+    public boolean deleteFavs(){
+        try{
+            favoriteDao.deleteAll();
+        }catch(Exception e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
     // testing - to be deleted
     public List<Favorites> getAllFavorites(){
         return favoriteDao.findAll();
