@@ -33,3 +33,18 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 - Requirement 3: vote on movies inside of groups
 
 - Requirement 4: perform logic to decide most voted on movie and display the winner
+
+## Technologies Used:
+
+- PostgreSQL
+- dBeaver
+- AWS RDS 
+- Java 1.8
+- Spring Data/MVC
+- Postman
+- Angular 13.1.1
+- TypeScript
+- HTML5
+- CSS
+- Bootstrap 5.1
+- ImDb API
