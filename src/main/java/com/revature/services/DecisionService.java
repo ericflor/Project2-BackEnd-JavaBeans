@@ -59,15 +59,13 @@ public class DecisionService {
         return decisionDao.findDistinctByRoundIdAndUserId(roundId, admin.getId());
     }
 
-    public String getRoundWinner(int roundId, int groupId){
-        System.out.println(roundId);
+    public String getRoundWinner(int groupId){
         int numUsers = userDAO.findByGroupId(groupId).size(); //# of users in this group
         int numDecisions = decisionDao.countByUserGroupId(groupId); //# of decisions group made
-        System.out.println(numUsers);
-        System.out.println(numDecisions);
+
         if(numUsers*10 == numDecisions){
-            System.out.println(decisionDao.getWinner(groupId, roundId));
-            return  decisionDao.getWinner(groupId, roundId);
+            System.out.println(decisionDao.getWinner(groupId));
+            return  decisionDao.getWinner(groupId);
         }
         return "No winner yet!";
     }

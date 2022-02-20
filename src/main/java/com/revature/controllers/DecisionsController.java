@@ -65,14 +65,13 @@ public class DecisionsController {
         return ResponseEntity.status(401).build();
     }
 
-    @GetMapping("/winner/{roundId}")
-    public ResponseEntity<String> getWinner(@CookieValue(name = "upNext_user") String cookie,
-                                            @PathVariable int roundId){
+    @GetMapping("/winner")
+    public ResponseEntity<String> getWinner(@CookieValue(name = "upNext_user") String cookie){
         User user = CookiesUtil.isCookieValid(cookie);
 
         if(user != null) { // making sure someone is logged in
 
-            String winner = decisionService.getRoundWinner(roundId, user.getGroup().getId()); // save imdb movie name by user id
+            String winner = decisionService.getRoundWinner(user.getGroup().getId()); // save imdb movie name by user id
             return ResponseEntity.status(200).body(winner);
         }
         return ResponseEntity.status(401).build();
