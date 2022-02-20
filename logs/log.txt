@@ -11653,3 +11653,263 @@ java.lang.NullPointerException: null
 12:05:11.779 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 12:05:11.779 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 12:05:11.780 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:03:13.454 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 37372 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+14:03:13.485 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+14:03:13.552 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:03:13.552 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:03:15.363 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:03:15.500 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 4 JPA repository interfaces.
+14:03:19.492 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+14:03:19.525 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+14:03:19.526 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:03:19.526 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+14:03:19.812 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+14:03:19.813 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6260 ms
+14:03:20.578 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:03:20.863 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+14:03:21.605 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:03:21.997 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:03:23.109 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:03:23.374 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:03:25.382 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:03:25.391 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:03:26.221 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:03:26.725 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:03:26.731 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+14:03:26.769 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+14:03:26.790 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+14:03:26.805 [] [restartedMain] INFO  com.revature.App - Started App in 13.788 seconds (JVM running for 14.662)
+14:03:47.957 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:03:47.957 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:03:47.959 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:16:47.258 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5623c2e8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.258 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@430108b6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.258 [] [http-nio-7000-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3060138a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.258 [] [http-nio-7000-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@122a9228 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.258 [] [http-nio-7000-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@240d7ccc (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.287 [] [http-nio-7000-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@38162512 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.292 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@60376b17 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.295 [] [http-nio-7000-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1ef70390 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:16:47.299 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@673fd002 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:40.918 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@21ee7f49 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:41.100 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1a10a1ae (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:41.201 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@26e15ab6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:41.319 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7d098bf8 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.179 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@286eea8b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.319 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5ba55b6f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.455 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@773d8e47 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.531 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@465a8d13 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.617 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@193f1de1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:29:43.662 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6830538a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:31.268 [] [http-nio-7000-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@65de975d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.812 [] [http-nio-7000-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@b84e86 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.844 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1f7c8bb0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.845 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5b0f79b9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.877 [] [http-nio-7000-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@29043a0b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.925 [] [http-nio-7000-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7be6717b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.925 [] [http-nio-7000-exec-9] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6ac3c951 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:45:33.928 [] [http-nio-7000-exec-7] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1338b3c0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:54.606 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7364b77d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.508 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1ce89cd (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.533 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6c87ddd9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.560 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1e95bde (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.682 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1345d21f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.824 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7b65805d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.881 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5fe691b1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:55.914 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@149a1638 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:56.006 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2972fb9e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+14:52:56.156 [] [http-nio-7000-exec-3] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7e42e185 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:47:19.984 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 41764 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+15:47:20.094 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+15:47:21.923 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:47:21.923 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:47:42.670 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:47:44.071 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1183 ms. Found 4 JPA repository interfaces.
+15:47:52.831 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+15:47:52.998 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+15:47:52.998 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:47:52.998 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:47:53.580 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+15:47:53.581 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 31655 ms
+15:47:56.894 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:47:59.636 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+15:48:03.987 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:48:06.249 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:48:12.748 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:48:13.954 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:48:24.494 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:48:24.533 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:48:27.210 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:48:28.884 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:48:28.893 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+15:48:29.165 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+15:48:29.230 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+15:48:29.245 [] [restartedMain] INFO  com.revature.App - Started App in 80.71 seconds (JVM running for 99.895)
+15:59:37.692 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:59:37.693 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:59:37.694 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+15:59:38.004 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@641ca4b9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.035 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7d1f36c7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.065 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5540f13d (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.094 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@16e2d1eb (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.122 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@43f22961 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.150 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@47df86d6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.180 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@15444e09 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.206 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@15a9b8c3 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.237 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@47c22236 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:59:38.266 [] [http-nio-7000-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7c10e52e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+16:44:17.314 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 24164 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+16:44:17.317 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:44:17.365 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:44:17.366 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:44:18.245 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:44:18.324 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+16:44:19.151 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:44:19.162 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:44:19.163 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:44:19.163 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:44:19.260 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:44:19.260 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1894 ms
+16:44:19.634 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:44:19.701 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:44:19.878 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:44:19.985 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:44:20.744 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:44:20.779 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:44:22.020 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:44:22.030 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:44:22.767 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:44:23.224 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:44:23.230 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:44:23.255 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:44:23.275 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:44:23.290 [] [restartedMain] INFO  com.revature.App - Started App in 6.315 seconds (JVM running for 6.918)
+16:44:42.453 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:44:42.453 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:44:42.454 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:45:25.462 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 14572 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+16:45:25.465 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:45:25.525 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:45:25.525 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:45:26.490 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:45:26.565 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+16:45:27.417 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:45:27.432 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:45:27.433 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:45:27.433 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:45:27.530 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:45:27.530 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2004 ms
+16:45:27.933 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:45:28.003 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:45:28.265 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:45:28.405 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:45:29.166 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:45:29.203 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:45:30.451 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:45:30.469 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:45:31.154 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:45:31.610 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:45:31.618 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:45:31.640 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:45:31.660 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:45:31.676 [] [restartedMain] INFO  com.revature.App - Started App in 6.581 seconds (JVM running for 7.178)
+16:45:34.899 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:45:34.899 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:45:34.900 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:49:30.026 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 18692 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+16:49:30.028 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:49:30.077 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:49:30.077 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:49:30.957 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:49:31.035 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+16:49:31.851 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:49:31.862 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:49:31.862 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:49:31.863 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:49:31.959 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:49:31.959 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1882 ms
+16:49:32.343 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:49:32.410 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:49:32.596 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:49:32.721 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:49:33.502 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:49:33.541 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:49:34.760 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:49:34.770 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:49:35.462 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:49:35.944 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:49:35.951 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:49:35.972 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:49:35.994 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:49:36.010 [] [restartedMain] INFO  com.revature.App - Started App in 6.326 seconds (JVM running for 6.931)
+16:51:36.654 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 6656 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+16:51:36.656 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:51:36.703 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:51:36.704 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:51:37.552 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:51:37.634 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+16:51:38.442 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:51:38.453 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:51:38.453 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:51:38.454 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:51:38.550 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:51:38.551 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1847 ms
+16:51:38.939 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:51:39.002 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:51:39.164 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:51:39.278 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:51:40.053 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:51:40.088 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:51:41.315 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:51:41.323 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:51:42.081 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:51:42.542 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:51:42.547 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:51:42.570 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:51:42.591 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:51:42.608 [] [restartedMain] INFO  com.revature.App - Started App in 6.283 seconds (JVM running for 6.881)
+16:51:50.245 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:51:50.245 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:51:50.247 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16:53:42.197 [] [http-nio-7000-exec-9] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf70x010x000x000xf30x030x030x8al0x1e0xcc0x800xf90xe2X0x85A0xf50xcbc0xb6#0x810xcd0x9d0xa50x9a0xf2x0xff0x81R@H0xc50xcc0xa20xa6> ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+16:58:24.316 [] [restartedMain] INFO  com.revature.App - Starting App using Java 1.8.0_311 on Gigatron with PID 33996 (C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans\build\classes\java\main started by justi in C:\Users\justi\Documents\Revature\Project2-BackEnd-JavaBeans)
+16:58:24.318 [] [restartedMain] INFO  com.revature.App - No active profile set, falling back to default profiles: default
+16:58:24.365 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:58:24.366 [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:58:25.250 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:58:25.331 [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+16:58:26.151 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 7000 (http)
+16:58:26.163 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7000"]
+16:58:26.163 [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:58:26.164 [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:58:26.255 [] [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring embedded WebApplicationContext
+16:58:26.255 [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1889 ms
+16:58:26.623 [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:58:26.692 [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.4.Final
+16:58:26.886 [] [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:58:27.001 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:58:27.763 [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:58:27.804 [] [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:58:29.061 [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:58:29.069 [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:58:29.740 [] [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:58:30.195 [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:58:30.201 [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:58:30.228 [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7000"]
+16:58:30.245 [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 7000 (http) with context path '/data'
+16:58:30.261 [] [restartedMain] INFO  com.revature.App - Started App in 6.295 seconds (JVM running for 6.885)
+16:58:39.126 [] [http-nio-7000-exec-1] INFO  o.a.c.c.C.[.[localhost].[/data] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:58:39.126 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:58:39.127 [] [http-nio-7000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
