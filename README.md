@@ -16,7 +16,7 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 
 ---
 
-- Users can
+## Users can :
 
 - Register.
 
