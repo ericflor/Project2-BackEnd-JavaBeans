@@ -9,5 +9,5 @@ public interface UserDAO extends JpaRepository<User, Integer> {
 
     User findByUsername(String username);
     List<User> findByGroupId(int groupId);
-
+    User findByGroupIdAndRoleId(int groupId, int roleId);
 }

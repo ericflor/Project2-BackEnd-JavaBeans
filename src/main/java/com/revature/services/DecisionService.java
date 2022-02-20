@@ -1,6 +1,7 @@
 package com.revature.services;
 
 import com.revature.models.Decisions;
+import com.revature.models.User;
 import com.revature.repos.DecisionDao;
 import com.revature.repos.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,9 +23,31 @@ public class DecisionService {
 
     //we will add movies into Decisions table
     public boolean addMovies(Decisions decisions){
+        System.out.println(decisions);
         try {
-            decisionDao.save(decisions);
+            System.out.println("youre in try block 1");
+        if(decisions.getUser().getRoleId()==2) {
+            Decisions decision1 = decisionDao.findByImdbIdAndRoundIdAndUserId(decisions.getImdbId(), decisions.getRoundId(), decisions.getUser().getId());
+            if(decision1.getDecisionsId()>0) {
+                decisions.setDecisionsId(decision1.getDecisionsId());
+            }
+            System.out.println(decision1);
+        }
         }catch(Exception e){
+            System.out.println("catch block 1 hit");
+            e.printStackTrace();
+            decisionDao.save(decisions);
+            return true;
+        }
+        try {
+            System.out.println("try block 2 babyyyy");
+            System.out.println(decisions);
+
+            decisionDao.save(decisions);
+
+
+        }catch(Exception e){
+            System.out.println("catch block 2 hit");
             e.printStackTrace();
             return false;
         }
@@ -32,15 +55,19 @@ public class DecisionService {
     }
 
     public List<Decisions> getMoviesForUsers(int roundId, int groupId){
-        return decisionDao.findDistinctByRoundIdAndUserGroupId(roundId, groupId);
+        User admin = userDAO.findByGroupIdAndRoleId(groupId, 2);
+        return decisionDao.findDistinctByRoundIdAndUserId(roundId, admin.getId());
     }
 
     public String getRoundWinner(int roundId, int groupId){
+        System.out.println(roundId);
         int numUsers = userDAO.findByGroupId(groupId).size(); //# of users in this group
         int numDecisions = decisionDao.countByUserGroupId(groupId); //# of decisions group made
-
+        System.out.println(numUsers);
+        System.out.println(numDecisions);
         if(numUsers*10 == numDecisions){
-            return  decisionDao.getWinner(roundId, groupId);
+            System.out.println(decisionDao.getWinner(groupId, roundId));
+            return  decisionDao.getWinner(groupId, roundId);
         }
         return "No winner yet!";
     }
