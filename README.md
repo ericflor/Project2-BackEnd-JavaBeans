@@ -5,6 +5,7 @@
 ---
 
 An indecisive group of USERS would like the decision of what movie/show to watch tonight to be taken out of their hands. upNext will provide them with a database of movies/shows and serve to them random options that they are able to anonymously choose from individually until there is a mutual choice between members.
+ Front end Repository (https://github.com/ericflor/Project2-FrontEnd-JavaBeans.git)
 
 **Use Case Diagram**
 ![](./imgs/project2-user-flow.jpg)
@@ -24,7 +25,7 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 
 - Update their information
 
-- Users will be served a selection of movies/shows through the ImDb API
+- Users will be served a selection of movies/shows through the IMDb API
 
 - Requirement 1: Users can search for and favorite movies
 
@@ -47,4 +48,4 @@ An indecisive group of USERS would like the decision of what movie/show to watch
 - HTML5
 - CSS
 - Bootstrap 5.1
-- ImDb API
+- IMDb API
