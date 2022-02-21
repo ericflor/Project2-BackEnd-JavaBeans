@@ -49,7 +49,7 @@ public class UserController {
         }
 
         if(userService.addOrUpdateUser(user)){
-            user.setPassword("");
+            //user.setPassword("");
             ResponseCookie cookie = CookiesUtil.buildResponseCookie(user);
 
             return ResponseEntity.status(201).header(HttpHeaders.SET_COOKIE, cookie.toString()).build();

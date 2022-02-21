@@ -30,7 +30,7 @@ public class LoginController {
         // Checks if account information is valid
         User u = loginService.validateAccount(user.username, user.password);
         if (u != null){
-            u.setPassword("");
+            //u.setPassword("");
             ResponseCookie cookie = CookiesUtil.buildResponseCookie(u);
             System.out.println(u.toString());
             return ResponseEntity.status(200).header(HttpHeaders.SET_COOKIE, cookie.toString()). body(u);
